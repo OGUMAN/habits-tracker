@@ -1,10 +1,23 @@
-# Nuxt Minimal Starter
+# 🧭 Habit Tracker
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A minimalistic habit tracker that lets you manage your habits—add, edit, and track your progress effortlessly.
 
-## Setup
+Built with [Nuxt](https://nuxt.com/), TypeScript, Pinia, and [nuxt-quasar-ui](https://nuxt.com/modules/quasar). This project follows the Feature-Sliced Design (FSD) architecture using [nuxt-fsd](https://github.com/aabounegm/nuxt-fsd).
 
-Make sure to install dependencies:
+---
+
+## 🚀 Features
+
+- Add, edit, and delete habits
+- Visualize your progress
+- Clean, Quasar-powered UI
+- Modular and scalable FSD structure
+
+---
+
+## ⚙️ Setup
+
+Install dependencies with your preferred package manager:
 
 ```bash
 # npm
@@ -18,11 +31,14 @@ yarn install
 
 # bun
 bun install
+
 ```
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+## 🧪 Development
+
+Start the development server at `http://localhost:3000`:
 
 ```bash
 # npm
@@ -36,11 +52,14 @@ yarn dev
 
 # bun
 bun run dev
+
 ```
 
-## Production
+---
 
-Build the application for production:
+## 📦 Production
+
+Build the app for production:
 
 ```bash
 # npm
@@ -54,9 +73,10 @@ yarn build
 
 # bun
 bun run build
+
 ```
 
-Locally preview production build:
+Preview the production build locally:
 
 ```bash
 # npm
@@ -70,6 +90,7 @@ yarn preview
 
 # bun
 bun run preview
+
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Refer to the [Nuxt deployment guide](https://nuxt.com/docs/getting-started/deployment) for deployment instructions.
