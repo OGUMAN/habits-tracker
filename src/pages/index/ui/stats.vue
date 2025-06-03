@@ -9,18 +9,14 @@ const habitsStore = useHabitsStore();
 
 const totalHabits = computed(() => habitsStore.habits.length);
 
-const today = new Date();
-const startOfToday = new Date(
-  today.getFullYear(),
-  today.getMonth(),
-  today.getDate()
-).getTime();
-const endOfToday = startOfToday + 24 * 60 * 60 * 1000;
+const now = Date.now();
 
 const completedToday = computed(
   () =>
     habitsStore.habits.filter((habit) =>
-      habit.progress.some((ts) => ts >= startOfToday && ts < endOfToday)
+      habit.progress.some(
+        (ts) => ts >= DateUtils.startOfDay(now) && ts < DateUtils.endOfDay(now)
+      )
     ).length
 );
 </script>
